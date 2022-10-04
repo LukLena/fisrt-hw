@@ -21,10 +21,26 @@ function solveEquation(a, b, c) {
   return arr; // array
 }
 solveEquation(1,3,5)
+
+'use strict';
 function calculateTotalMortgage(percent, contribution, amount, date) {
   let totalAmount;
+    let loanAmount;
+    loanAmount = contribution - amount;
+    
+    //нужно из сегодняшней даты высчитать дату окончания
+    date.getFullYear();
+    date.getMonth();
+    let term;
+    let today = new Date;
+    
+    
+    let payment;
+    percent = 0.83;
+    payment = loanAmount * (percent +(percent / (((1 + percent) ** term) - 1)))
 
   // код для задачи №2 писать здесь
 
   return totalAmount;
 }
+calculateTotalMortgage(10, 0, 50000, 12)
